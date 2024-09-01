@@ -3,12 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    
+    <script src="https://kit.fontawesome.com/b7e14b730c.js" ></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="android-chrome-512x512.png">
+<link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dhanush portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b7e14b730c.js" ></script>
+    <script src="https://kit.fontawesome.com/b7e14b730c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    
 </head>
 
 <body>
@@ -18,22 +24,23 @@
         <nav>
             <p id="logo">dhanush koti</p>
             <ul id="ul">
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#work">my work</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="#home" class="al"><home</a></li>
+                <li><a href="#about" class="al">about</a></li>
+                <li><a href="#work" class="al">my work</a></li>
+                <li><a href="#skills" class="al">skills</a></li>
+                <li><a href="#contact" class="al">contact</a></li>
             </ul>
             <i class="fas fa-bars" id="bar"></i>
         </nav>
         <!-- <div class="top">
 <a href="#home">    <img src="arrow2.png" alt="asdsdadsa"></a>
    </div> -->
-        <div id="hider">
+        <div class="hider">
             <div class="content">
 
                 <h3> <span class="h">Hello,</span>I'm</h3>
-                <h1 >dhanush koti </h1>
-                <p>student , budding developer & human being </p>
+                <h2 id="name">dhanush koti </h2>
+                <p>Student|Budding Developer|Entrepreneur </p>
                 <a href="#about" id="a">about me</a>
                 <!-- <button id="#about"> <a href="#about">about me</a> </button> -->
             </div>
@@ -43,28 +50,27 @@
 
     <h1>about me</h1>
 
-    <section id="about">
+    <section id="about" class="hider">
 
 
 
         <div class="left">
-            <img src="dhanush1.jpg" alt="about">
+            <img src="images/dk.jpg" alt="about">
         </div>
         <div class="right">
             <p>
                 i'm dhanush koti, but you can just call me <span class="identify">DK.</span>
             </p>
             <br>
-            <p>i'm studying 11<sup>th</sup> std now and i also a <span class="identify">Budding Developer Too.</span>coding is my passion and it
-                gives me more fun .</p>
-            <br>
+             <p> I am constantly seeking to expand my knowledge and skills in various areas of <span class="identify">technology</span>. </p>
+            <br>    
             <p>i've been honing my skills in <span class="identify">web deisgn.</span></p>
             <br>
             <!-- <p></p>
             <br> -->
-            <p>my inspiration is <span class="identify">elon musk .</span></p>
+            <p>My journey into web development began with a curiosity for how websites are built and function. This curiosity quickly turned into a passion, leading me to pursue studies in computer science and web development. Along the way, I've developed a strong foundation in HTML, CSS, JavaScript, and various web development frameworks.<span class="identify"></span></p>
             <br>
-            <p>Less <span class="identify">Moody</span> in real life. ✌️</p>
+            <p><span class="identify"></span> </p>
             <br>
 <div class="sub-con">
     <p class="highl">Have An Intresting Project?</p>
@@ -77,17 +83,50 @@
     <section id="work">
 
         <div class="work">
-            <a href="https://dhanushkoti123.github.io/gympal/" title="gym webite"><img src="gym2.png" alt="gym"></a>
+            <a href="https://dhanushkoti123.github.io/gympal/" title="gym webite"><img src="images/gym2.png" alt="gym"></a>
             <p> <a href="https://dhanushkoti123.github.io/gympal/">gym website</a> </p>
         </div>
 
         <div class="work">
-            <a href="error.html" ><img src="coffe.png" alt="cofee"></a>
-            <p><a href="error.html">coffee website</a> </p>
+            <a href="error.html" ><img src="images/coffe.png
+                " alt="cofee"></a>
+            <p><a href="error.html" >coffee website</a> </p>
         </div>
 
 
     </section>
+    <h1>skills</h1>
+<section id="skills">
+    <div class="skill-content">
+<div class="skill html"><img class="skill-icon " src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" />
+<h4 class="skill-title">HTML</h4>
+<h6 class="skill-percentage">90%</h6>
+</div>
+<div class="skill js"><img  class="skill-icon" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>
+    <h4 class="skill-title">JavaScript</h4>
+    <h6 class="skill-percentage">40%</h6>
+</div>
+<div class="skill ejs"><img class="skill-icon" width="50" height="50" src="https://img.icons8.com/officel/80/express-js.png" alt="express-js"/>
+    <h4 class="skill-title">express-js</h4>
+    <h6 class="skill-percentage">20%</h6>
+</div>
+<div class="skill css"><img  class="skill-icon" src="https://img.icons8.com/color/48/css3.png" alt="css"/>
+    <h4 class="skill-title">css3</h4>
+    <h6 class="skill-percentage">75%</h6>
+</div>
+<div class="skill node"><img  class="skill-icon" src="https://img.icons8.com/color/48/nodejs.png" alt="nodejs"/>
+    <h4 class="skill-title">nodejs</h4>
+    <h6 class="skill-percentage">30%</h6>
+</div>
+<div class="skill git"><img  class="skill-icon" src="https://img.icons8.com/color/48/git.png" alt="git"/>
+    <h4 class="skill-title">git</h4>
+    <h6 class="skill-percentage">60%</h6>
+</div>
+
+    </div>
+
+</section>
+
 
     <h1>contact</h1>
     <section id="contact">
@@ -100,16 +139,19 @@
 
         </div>
         <div class="contact">
-            <form method="POST" action="https://formsubmit.co/dhanushkotis8@gmail.com" >
-                <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_next" value="https://dhanushkoti2006.github.io/test/thanks">
+            <!-- <form method="POST" action="https://formsubmit.co/42046d0369d782fbdc4b2f82cc51b23c " > -->
+                <!-- <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_next" value="https://dhanushkoti2006.github.io/test/thanks"> -->
 
 
-
-                <input type="text" placeholder="name" name="name" required  ><br>
-                <input type="email" placeholder="email" name="email" required><br>
-                <textarea cols="30" rows="10" placeholder="type message" required name="message" ></textarea><br>
-                <button type="submit" name="_captcha" value="false">send</button><br>
+       <form   method="POST" action="contact.php">
+                <input type="text" placeholder="name" name="name" required maxlength="20" oninvalid="this.setCustomValidity('Please Enter Your Name Here')"
+                oninput="this.setCustomValidity('')"><br>
+                <input type="email" placeholder="email" name="email" required  oninvalid="this.setCustomValidity('Enter your mail id  ')"
+                oninput="this.setCustomValidity('')"><br>
+                <textarea cols="30" rows="10" placeholder="type message" required name="message" oninvalid="this.setCustomValidity('please Enter User message ')"
+                oninput="this.setCustomValidity('')" ></textarea><br>
+                <button type="submit" name="submit" value="submit">send</button><br>
             </form>
         </div>
     </section>
@@ -130,13 +172,18 @@
         </div>
     </section>
 
+    <!-- <section id="cookies">
+       <div class="cookie-content">
+<p>accept all cokkies <button>accept all</button></p>
+       </div>
+    </section> -->
+
     <script src="app.js"></script>
 
 
 
 
-
-
+    
 </body>
 
 </html>
