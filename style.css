@@ -64,7 +64,7 @@ nav {
   text-transform: capitalize;
   font-size: 2rem;
   cursor: pointer;
-text-shadow: 2px 3px rgba(215, 106, 10, 0.42);
+/* text-shadow: 1px 2px rgba(255, 255, 255, 0.42); */
   animation: top1 400ms linear 1  ;
  animation-delay: 300ms;
  visibility: hidden;
@@ -168,7 +168,7 @@ p a {
   text-transform: capitalize;
   font-size: 2.5rem;
   text-align: center;
-  /* font-family: cursive, sans-serif; */
+  font-family:   cursive, sans-serif;
   font-weight: 900;
 
   margin-top: 5px;
@@ -186,11 +186,7 @@ button a {
   text-decoration: none;
   font-size: 2rem;
 }
-.content button:hover {
-  background: transparent;
-  color: var(--primary);
-  border: 2px solid rgb(94, 80, 54);
-}
+
 .content button {
   padding: 5px 19px;
   background: orange;
@@ -203,6 +199,12 @@ button a {
   text-transform: uppercase;
 
   transition: color 700ms;
+}
+.content button:hover {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid rgb(94, 80, 54);
+  
 }
 
 #about {
@@ -234,8 +236,8 @@ button a {
 
 h1 {
   font-size: 35px;
-  color: #9900ff;
-  text-shadow: 2px 4px rgb(124, 124, 124);
+  color: #9733f5;
+  text-shadow: 2px 4px rgba(124, 124, 124, 0.21);
   font-family: cursive, sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -243,15 +245,26 @@ h1 {
 .heading p {
   color: var(--primary);
 }
+/* body{
+  /* touch-action: none; */
+/* }  */
 
+.left{
+  touch-action: none;
+}
 .left img {
   width: 300px;
+  z-index: -1;
   border-radius:250px;
   cursor:not-allowed;
   filter: drop-shadow(8px 8px 30px blue);
+  touch-action: none;
+
+  
 
 
 }
+
 .left img:hover{
   filter: drop-shadow(8px 8px 30px red);
 
@@ -293,6 +306,7 @@ h1 {
 .right button:hover {
   background: #9900ff;
   transform: scalex(1.1);
+  transition:background 1.1s, color 1.2s;
   color: #eeee;
 }
 
@@ -314,6 +328,7 @@ text-decoration: none;
   border: 2px solid   #9900ff ;
   padding: 5px 9px;
   text-transform: capitalize;
+  /* letter-spacing: 10px; */
   transition: all 400ms;
 }
 
@@ -322,7 +337,8 @@ text-decoration: none;
   font-weight: 900;
   
   border: 2px solid   #eff0f2 ;
-
+  transition: border 1.3s, color 1s;
+letter-spacing: 1px;
 }
 h1 {
   margin-top: 30px;
@@ -382,12 +398,17 @@ h1 {
   align-items: center; */
   margin: 0 auto ;
   box-shadow: 10px 20px 40px rgb(0, 0, 0);
-
+z-index: 0;
   background:var(--primary);
   border-radius: 20px;
   margin-bottom: 20px;
+  user-select: none;
   padding: 6vw 16vw;
+  
+
 }
+
+
 
 .skill-content{
   display: grid;
@@ -407,12 +428,19 @@ place-items: center;
 .skill-icon,.skill-title{
 width: 60px ;
   justify-content: space-between;
+  cursor: pointer;
+  /* cursor: zoom-in; */
 
 
 }
 .skill-icon {
-  width: 70px;
-  height: 70px;
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #a2a2ac21;
+  
+  z-index: 0;
 }
 .skill-title{
   color: var(--five);
@@ -420,11 +448,11 @@ width: 60px ;
   text-transform: uppercase;
   font-size: 20px;
   text-align: center;
-
+  /* cursor: pointer; */
 }
 .skill:hover .skill-icon  {
   opacity:0.45;
-  animation:another-animation .5s alternate forwards;
+  animation:another-animation 1.3s alternate forwards;
  
 }
 
@@ -436,7 +464,10 @@ width: 60px ;
    display: block;
   cursor: pointer;
   opacity: 0;
-  animation:slower .5s alternate forwards ;
+  
+
+
+  animation:slower 1s alternate forwards ;
   /* animation: slower 1s alternate; */
 }
 @keyframes another-animation {
@@ -444,7 +475,8 @@ width: 60px ;
     transform:scale(0);
   }
   100%{
-    transform:scale(1.5);
+    transform:scale(1.2);
+
   }
 }
 @keyframes slower{
@@ -463,14 +495,21 @@ width: 60px ;
 
 .skill-percentage{
   color:rgb(255, 255, 255);
-  background:transparent;
+  background-size: cover;
   
-  font-size: 30px;
+  border-radius:50% ;
+  text-align: center;
+  width: 40px;
+ 
+  height: 40px;
+  align-items: center;
+  font-size: 28px;
   position: absolute;
-  top: 50%;
+  top: 50%; 
+  left: 50%;
   font-weight: bolder;
   text-shadow: 3px 3px rgb(37, 31, 31);
-  left: 50%;
+
   transform: translate(-50%,-50%);
   display: none;
 
@@ -603,7 +642,7 @@ textarea::placeholder {
   text-align: center;
   margin-bottom: 10px;
 }
-.social-links2 a i:hover {
+.social-links2 a:nth-child(1):hover {
   color: #9900ff;
 }
 .detail p {
@@ -613,7 +652,7 @@ textarea::placeholder {
   text-transform: uppercase;
   margin-bottom: 1px;
 }
-#footer #logo {
+#footer .logo {
   text-align: center;
 }
 
@@ -621,7 +660,7 @@ textarea::placeholder {
   color: #9900ff;
   font-size: 2rem;
   float: right;
-
+cursor: pointer;
   align-items: flex-end;
   line-height: 55px;
   display: none;
@@ -655,22 +694,67 @@ textarea::placeholder {
     right: 90rem; 
 
   }
+ #about img{
+    z-index: 0;
+    position: relative;
+  } 
   #logo {
     float: right;
+  
     margin-right: 20px;
+  }
+
+  .logo{
+    text-align: center;
+    color:sandybrown;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration:none;
+    margin-bottom: 10px;
+    text-decoration:unset;
+    
+
+
+  }
+  .scroller{
+    z-index: 0;
+    /* background-color: red; */
+    /* position: fixed; */
+    opacity: 0.1;
+    /* position: relative; */
+  }
+  .imagehider{
+    opacity: 0.1;
   }
   .show {
     display: flex;
     flex-direction: column;
-    background-color: rgb(18, 15, 15);
-    width: 100%;
+    background: rgb(0, 0, 0);
+    background-blend-mode:overlay;
+    width: 98%;
+    padding: 0 10px;
+    text-overflow:ellipsis;
+    border-radius: 25px;
+    white-space:nowrap;
+    overflow: hidden;
     justify-content: center;
     margin-top: -50px;
-
+    clear: both;
+    /* background: fixed; */
+/* position: fixed; */
     text-align: center;
-    height: 99vmax;
-    z-index: 1;
+    height: 50vmax;
+    z-index: 100;
+    
     align-items: center;
+  }
+  /* .scroller{
+    /* scroll-behavior: inherit; */
+    /* overflow-y: hidden; */
+    /* opacity: 0.43; */
+  /* }  */
+  nav{
+    position: fixed;
   }
   nav ul li a {
     text-align: left;
@@ -678,6 +762,7 @@ textarea::placeholder {
 
     justify-content: center;
     align-items: center;
+    
     margin: 0 auto;
   }
 
@@ -751,6 +836,7 @@ place-items: center;
 @media screen and (max-width: 470px) {
   h1 {
     font-size: 28px;
+    text-shadow: 2px 3px rgba(69, 64, 64, 0.226);
   }
  
   #about img {
