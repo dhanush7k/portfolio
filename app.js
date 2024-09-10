@@ -8,7 +8,7 @@ let content = document.querySelector(".hider")
 let skillimg =  document.querySelector(".skill-content")
 // skillimg[skillimg.length -1]
 
-// bar.addEventListener("",()=>{
+// bar.addEventListener("click",()=>{
 //     ulel.classList.add("show")
 //     // fullBody.style.left=-100;
 //     // content.classList.toggle("move")
@@ -26,6 +26,8 @@ bar.addEventListener("click",()=>{
 
 ulel.addEventListener("click",()=>{
     ulel.classList.remove("show")
+    content.classList.remove("imagehider")
+    skillimg.classList.remove("imagehider")
 })
 
 // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
